@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <title>API</title>
   </head>
@@ -11,9 +12,23 @@
   <body>
 
     <!-- VueJS -->
+    
     <script src="https://unpkg.com/vue@3"></script>
 
-    prova
+    <div id="myapp" class="container">
+
+      <h1> Ecco le 10 email richieste</h1>
+
+      <!-- Lista email -->
+
+      <ul id="mailing-list" v-if="mailingList.length === emailNumber">
+
+        <li v-for="mail in mailingList"> {{ mail }}</li>
+
+      </ul>
+
+    </div>
+
 
     <!-- Javascript -->
 

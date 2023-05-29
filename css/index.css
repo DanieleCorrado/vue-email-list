@@ -7,5 +7,27 @@
 }
 
 body {
-  background-color: violet;
+  font-size: 25px;
+}
+
+/* Regole container */
+
+.container {
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+}
+
+/* Regole lista mail */
+
+#mailing-list {
+  list-style: none;
+}
+
+#mailing-list li {
+  margin-bottom: 10px;
 }
